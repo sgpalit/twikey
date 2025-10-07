@@ -1,0 +1,12 @@
+
+services:
+  twikey-postgresql:
+    image: postgres
+    container_name: twikey-postgresql
+    environment:
+      - POSTGRES_USER=twikey
+      - POSTGRES_PASSWORD=twikey_p@ss
+      - POSTGRES_DB=twikey_db
+    ports:
+      - 5432:5432
+
